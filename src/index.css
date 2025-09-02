@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+/* Full-screen loader overlay */
+.app-loader-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.7);
+  z-index: 1000;
+}
+
+/* Simple CSS spinner */
+.app-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #cfd8dc;
+  border-top-color: #1976d2;
+  border-radius: 50%;
+  animation: appSpin 1s linear infinite;
+}
+
+@keyframes appSpin {
+  to { transform: rotate(360deg); }
+}
